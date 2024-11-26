@@ -1,0 +1,33 @@
+#ingress {
+#    description = "Allow SSH"
+#    from_port   = 22
+#    to_port     = 22
+#    protocol    = "tcp"
+#    cidr_blocks = ["0.0.0.0/0"]
+#  }
+#  ingress {
+#    description = "Allow SSH"
+#    from_port   = 389
+#    to_port     = 389
+#    protocol    = "tcp"
+#    cidr_blocks = ["0.0.0.0/0"]
+#  }
+#
+#  egress {
+#    from_port   = 0
+#    to_port     = 0
+#    protocol    = "-1"
+#    cidr_blocks = ["0.0.0.0/0"]
+#  }
+
+
+#provisioner "file" {
+#    on_failure  = continue
+#    source      = "hello.txt"
+#    destination = "/tmp/hello.txt"
+#  }
+#
+#  provisioner "local-exec" {
+#    on_failure = continue
+#    command    = "echo ${aws_instance.Master[*].public_ip} >> /tmp/ips.txt"
+  }

@@ -1,0 +1,14 @@
+aws_Access_key     = ""
+aws_Secrete_key    = ""
+aws_region         = "us-east-1"
+vpc_cidr           = "10.0.0.0/16"
+availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c", ]
+ami_id             = "ami-066784287e358dad1" # Replace with a valid AMI ID
+#instance_type      = "t2.small"
+Master-servers     = ["us-server1"]
+vpc_name           = "main_vpc"
+SG_allow-ssh       = "Main_SG"
+igw_name           = "Main_igw"
+public-route-table = "Main_routable"
+public-subnet      = "public_subnete"
+#ingress_ports     = [22, 80, 443, 389, 3389, 8080]
